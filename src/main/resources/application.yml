@@ -7,10 +7,31 @@ spring:
     type: com.alibaba.druid.pool.DruidDataSource
   thymeleaf:
     prefix: classpath:/templates/
+    suffix: .html
+  mail:
+    host: smtp.qq.com
+    port: 465
+    username: 3100535850@qq.com
+    password: eyoyygrjgubjdcej
+    protocol: smtps
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
 mybatis-plus:
   type-aliases-package: com.jwking.community.pojo
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+#    使用自动id回填
+    use-generated-keys: true
 logging:
   level:
     com.jwking.community: debug
+
+community:
+  path:
+    domain: http://localhost:8080
+server:
+  servlet:
+    context-path: /community
