@@ -29,4 +29,12 @@ public class MailUtilTest {
         System.out.println(content);
         mailUtil.sendMail("15268243229@163.com", "爱你", content);
     }
+
+    @Test
+    void stringTest() {
+        String url = "123456.png";
+        String suffix = url.substring(url.lastIndexOf("."));
+        System.out.println(suffix);
+
+    }
 }

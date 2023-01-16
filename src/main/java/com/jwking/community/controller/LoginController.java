@@ -1,5 +1,6 @@
 package com.jwking.community.controller;
 import com.google.code.kaptcha.Producer;
+import com.jwking.community.annotation.LoginRequired;
 import com.jwking.community.pojo.User;
 import com.jwking.community.service.Impl.UserServiceImpl;
 import com.jwking.community.service.LoginTicketService;
@@ -115,7 +116,7 @@ public class LoginController {
         }
 
     }
-
+    @LoginRequired
     @GetMapping("/logout")
     public String logout(@CookieValue("ticket") String ticket) {
         loginTicketService.logout(ticket);

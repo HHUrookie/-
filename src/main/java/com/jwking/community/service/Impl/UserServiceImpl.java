@@ -108,4 +108,8 @@ public class UserServiceImpl extends ServiceImpl<UserMapper,User> implements Use
         }
 
     }
+
+    public Integer updateHeader(Integer userId,String headerUrl){
+        return userMapper.update(null, new UpdateWrapper<User>().eq("id", userId).set("header_url", headerUrl));
+    }
 }

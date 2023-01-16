@@ -8,23 +8,23 @@ public interface CommunityConstant {
     /**
      * 激活成功
      */
-    static final Integer ACTIVATION_SUCCESS = 0;
+    Integer ACTIVATION_SUCCESS = 0;
     /**
      * 重复激活
      */
-    static final Integer ACTIVATION_REPEAT = 1;
+    Integer ACTIVATION_REPEAT = 1;
     /**
      * 激活失败
      */
-    static final Integer ACTIVATION_FAIL = 2;
+    Integer ACTIVATION_FAIL = 2;
 
     /**
      * 默认状态下的登录凭证超时时间 ==12h
      */
-    static final Integer DEFAULT_EXPIRED_SECONDS = 3600 * 12;
+    Integer DEFAULT_EXPIRED_SECONDS = 3600 * 12;
 
     /**
      * 记住我 下的超时时间   ==   50天
      */
-    static final Integer REMEMBER_EXPIRED_SECONDS = 3600 * 12 * 100;
+     Integer REMEMBER_EXPIRED_SECONDS = 3600 * 12 * 100;
 }

@@ -19,6 +19,10 @@ spring:
         smtp:
           ssl:
             enable: true
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true
 mybatis-plus:
   type-aliases-package: com.jwking.community.pojo
   configuration:
@@ -32,6 +36,9 @@ logging:
 community:
   path:
     domain: http://localhost:8080
+    # 上传路径
+    upload: D:/javaprojiect/niuke-springboot/data/upload
 server:
   servlet:
     context-path: /community
+
