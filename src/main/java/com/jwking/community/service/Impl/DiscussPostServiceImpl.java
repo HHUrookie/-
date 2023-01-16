@@ -5,7 +5,6 @@ import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.jwking.community.dao.DiscussPostMapper;
 import com.jwking.community.pojo.DiscussPost;
 import com.jwking.community.service.DiscussPostService;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;

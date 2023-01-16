@@ -1,7 +1,7 @@
 package com.jwking.community.utils;
 
 /**
- * 定义一些激活常量
+ * 定义一些常量
  */
 public interface CommunityConstant {
 
@@ -17,4 +17,14 @@ public interface CommunityConstant {
      * 激活失败
      */
     static final Integer ACTIVATION_FAIL = 2;
+
+    /**
+     * 默认状态下的登录凭证超时时间 ==12h
+     */
+    static final Integer DEFAULT_EXPIRED_SECONDS = 3600 * 12;
+
+    /**
+     * 记住我 下的超时时间   ==   50天
+     */
+    static final Integer REMEMBER_EXPIRED_SECONDS = 3600 * 12 * 100;
 }
