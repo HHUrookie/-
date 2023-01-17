@@ -11,5 +11,9 @@ public interface DiscussPostService extends IService<DiscussPost> {
 
     Integer numbersOfDiscussPost(Integer userId);
 
+    Integer addDiscussPost(DiscussPost discussPost);
+
+    DiscussPost selectById(Integer id);
+
 
 }

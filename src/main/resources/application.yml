@@ -19,6 +19,7 @@ spring:
         smtp:
           ssl:
             enable: true
+ #  put,delete请求
   mvc:
     hiddenmethod:
       filter:

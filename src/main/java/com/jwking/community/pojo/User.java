@@ -19,12 +19,15 @@ public class User {
     private Integer id;
     private String username;
     private String password;
+    /**
+     * 用于加密密码
+     */
     private String salt;
     private String email;
     /**
      * 用户类型，0：普通用户 1：超级用户 2：版主====>一版之主的意思，主要负责管理论坛的某些版块
      */
-    private Integer type;
+    private Integer type = 0;
     /**
      * 状态，0：未激活 1：已激活
      */

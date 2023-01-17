@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import java.io.File;
+import java.io.IOException;
+
 @SpringBootTest
 class NiukeSpringbootApplicationTests {
 
@@ -25,6 +28,18 @@ class NiukeSpringbootApplicationTests {
         System.out.println(uploadPath);
         String md5 = CommunityUtil.getMD5("123456" + "2fe31");
         System.out.println(md5);
+    }
+
+    @Test
+    void fileTest() {
+
+        File file = new File("/1.txt");
+        try {
+            file.createNewFile();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println(file.getAbsolutePath());
     }
 
 }
